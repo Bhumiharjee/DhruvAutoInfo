@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: lightblue;
+    }
+
+    .pages {
+        text-align: right;
+    }
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+
+    }
+
+    .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+    }
+
+    .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .title {
+        color: grey;
+    }
+
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .button:hover {
+        background-color: #555;
+    }
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <div class="pages">
+        <a href="/contact"><button>Contact US</button></a>
+        <a href="/logout"><button>Logout</button></a>
+    </div>
+    <div class="about-section">
+        <img src="../static/imgs/logo_dhruv.jpg" alt="logo" width="100" height="100" style="vertical-align:left">
+        <h1>About Dhruv Auto Info.</h1>
+        <p>This Website will provide you with basic information about bikes</p>
+        <p>Here we help the user to gain information about the bikes they would like to buy or are looking to buy any
+            bike.<br> Here we help the customer with the basic information about the bike they would need before
+            concidering
+            the bike for their final purchase.</p>
+    </div>
+
+    <h2 style="text-align:center">Bikes</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="../static/imgs/apache.jpg" alt="apache" style="width:100%">
+                <div class="container">
+                    <h2>Apache RTR 200 4v</h2>
+                    <p class="title">TVS</p>
+                    <p>Price: Rs.1,28,278</p>
+                    <p>Engine Capacity: 197.75 cc</p>
+                    <p>Mileage: 38.5 kmpl</p>
+                    <p>Transmission: 5 Gear</p>
+                    <p>Weight: 152kg</p>
+                    <p>Fuel Capacity: 12 liters</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="../static/imgs/R15.jpg" alt="r15" style="width:100%">
+                <div class="container">
+                    <h2>R15 4V</h2>
+                    <p class="title">Yamaha</p>
+                    <p>Price: Rs. 1,79,749</p>
+                    <p>Engine Capacity: 155cc</p>
+                    <p>Mileage: 45 kmpl</p>
+                    <p>Transmission: 6 Gears</p>
+                    <p>Weight: 142 kg</p>
+                    <p>Fuel Capacity: 11 liters</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="../static/imgs/interceptor.jpg" alt="interceptor" style="width:100%">
+                <div class="container">
+                    <h2>Interceptor 650</h2>
+                    <p class="title">Royal Enfield</p>
+                    <p>Price: Rs. 2,88,166</p>
+                    <p>Engine Cpacity: 648 cc</p>
+                    <p>Mileage: 23 kmpl</p>
+                    <p>Transmission: 6 Gears</p>
+                    <p>Weight: 202 kg</p>
+                    <p>Fuel Capacity: 13.7 liters</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="../static/imgs/activa.jpg" alt="activa" style="width:100%">
+                <div class="container">
+                    <h2>Acitiva 6G</h2>
+                    <p class="title">Honda</p>
+                    <p>Price: Rs. 73,531</p>
+                    <p>Engine Cpacity: 109.51 cc</p>
+                    <p>Mileage: 48 kmpl</p>
+                    <p>Max Power: 7.68 bhp</p>
+                    <p>Weight: 107 kg</p>
+                    <p>Fuel Capacity: 5.3 liters</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="../static/imgs/pleasure.jpg" alt="please" style="width:100%">
+                <div class="container">
+                    <h2>Pleasure+</h2>
+                    <p class="title">Hero</p>
+                    <p>Price: Rs. 67,895</p>
+                    <p>Engine Cpacity: 110.9 cc</p>
+                    <p>Mileage: 50 kmpl</p>
+                    <p>Max Power: 8bhp</p>
+                    <p>Weight: 104 kg</p>
+                    <p>Fuel Capacity: 4.8 liters</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
